@@ -1,5 +1,10 @@
+import { GlobalStyle } from "./styles/GlobalStyle"
+
 export const App = () => {
   return (
-    <h1>ToDo Tast Management</h1>
+    <>
+      <GlobalStyle />
+      <h1>ToDo Tast Management</h1>
+    </>
   )
 }
