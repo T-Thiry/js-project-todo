@@ -1,11 +1,7 @@
 import styled from "styled-components"
-import { useTaskStore } from "../stores/useTaskStore"
 
 
 export const Task = ({ id, task, completed }) => {
-  const deleteTask = useTaskStore(state => state.deleteTask)
-  const toggleComplete = useTaskStore(state => state.toggleComplete)
-
   return (
     <TaskWrapper>
       <TaskContent>
@@ -35,9 +31,4 @@ const TaskMessage = styled.p`
   flex: 1;
   padding-right: 1rem;
   text-decoration: ${props => (props.completed ? "line-through" : "none")};
-`
-
-const Icons = styled.div`
-  display: flex;
-  gap: 0.5rem;
 `
