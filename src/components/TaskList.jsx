@@ -30,11 +30,13 @@ export const TaskList = () => {
 const Section = styled.section`
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
 `
 
 const TaskSummary = styled.p`
   margin-bottom: 1rem;
   font-weight: bold;
+  margin: 1rem;
 `
 
 const EmptyState = styled.div`

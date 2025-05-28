@@ -34,10 +34,14 @@ export const Task = ({ id, task, completed }) => {
 const TaskWrapper = styled.div`
   max-width: 500px;
   padding: 0.7rem;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
   background-color: #ededfb;
   border-radius: 8px;
   border-left: 3px solid #1c55e4;
+
+  @media (min-width: 768px) {
+    margin: 0 0 1rem 0;
+  }
 `
 
 const TaskContent = styled.div`
