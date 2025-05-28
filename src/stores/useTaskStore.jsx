@@ -38,4 +38,6 @@ export const useTaskStore = create((set) => ({
     }))
   },
 
+  clearTasks: () => set({ tasks: [] }),
+
 }))
