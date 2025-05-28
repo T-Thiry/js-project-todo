@@ -32,11 +32,17 @@ const TextContent = styled.div`
 
   @media (min-width: 768px) {
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     p {
       font-size: 1.125rem;
+    }
+  }
+  
+    @media (min-width: 1024px) {
+    h1 {
+      font-size: 2rem;
     }
   }
 `
