@@ -40,4 +40,5 @@ export const useTaskStore = create((set) => ({
 
   clearTasks: () => set({ tasks: [] }),
 
+  resetTasks: () => set(initialState)
 }))
