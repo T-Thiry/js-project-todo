@@ -30,4 +30,12 @@ export const useTaskStore = create((set) => ({
     }))
   },
 
+  toggleComplete: (id) => {
+    set(state => ({
+      tasks: state.tasks.map(task =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
+    }))
+  },
+
 }))
