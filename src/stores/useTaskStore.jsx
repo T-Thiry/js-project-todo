@@ -24,4 +24,10 @@ export const useTaskStore = create((set) => ({
     set(state => ({ tasks: [newTask, ...state.tasks] }))
   },
 
+  deleteTask: (id) => {
+    set(state => ({
+      tasks: state.tasks.filter(task => task.id !== id)
+    }))
+  },
+
 }))
