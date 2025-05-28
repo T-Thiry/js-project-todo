@@ -13,4 +13,15 @@ const initialState = {
 
 export const useTaskStore = create((set) => ({
   ...initialState,
+
+  createTask: (task) => {
+    const newTask = {
+      id: Date.now(),
+      task,
+      completed: false
+    }
+
+    set(state => ({ tasks: [newTask, ...state.tasks] }))
+  },
+
 }))
