@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import headerImg from "/src/assets/images/Sharing_thoughts.png"
+import headerImg from "/src/assets/images/Task_management.png"
 
 
 export const Header = () => {
@@ -19,27 +19,24 @@ const StyledHeader = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  @media (min-width: 768px) {
-      flex-direction: row;
-    }
 `
 
 const TextContent = styled.div`
   text-align: center;
-   margin: 1rem 2rem;
+   margin: 1rem 1rem 0 1rem;
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   p {
     font-size: 1rem;
+    padding: 0 1rem
   }
 
   @media (min-width: 768px) {
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
 
     p {
@@ -57,6 +54,13 @@ const TextContent = styled.div`
 `
 
 const HeaderImage = styled.img`
-  width: 120px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
+  padding: 1rem;
+  box-sizing: border-box; 
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 `

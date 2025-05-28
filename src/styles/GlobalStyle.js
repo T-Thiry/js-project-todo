@@ -7,5 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Quicksand", sans-serif;
     background: #FFFFFF;
     color: #1E1E1E;
+    box-sizing: border-box;
   }
 `;
