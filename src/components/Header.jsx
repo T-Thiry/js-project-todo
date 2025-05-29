@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import headerImg from "/src/assets/images/Task_management.png"
+import headerImg from "/src/assets/images/Task_management.webp"
 
 
 export const Header = () => {
