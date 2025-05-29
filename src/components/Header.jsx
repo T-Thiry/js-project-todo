@@ -9,7 +9,7 @@ export const Header = () => {
         <h1>ToDo Task Management</h1>
         <p>Stay organized with your personal task manager</p>
       </TextContent>
-      <HeaderImage src={headerImg} alt="Task management" />
+      <HeaderImage src={headerImg} alt="Task management" width="500" height="300" />
     </StyledHeader>
   )
 }
